@@ -1,22 +1,27 @@
+NAME = libft.a
 CC = gcc
 FLAGS = -Wall -Wextra -Werror
 SRC = ./srcs
 INCL = ./includes
-SRC_FILES = $(wildcard $(SRC)/*.c)
+FILES = ft_putchar.c ft_putstr.c ft_swap.c ft_strlen.c ft_strcmp.c
+#Colando diretório no nome dos arquivos .c
+SRC_FILES = $(foreach file,$(FILES),$(SRC)/$(file))
 OBJ_FILES = $(SRC_FILES:.c=.o)
 
-libft.a: $(OBJ_FILES)
-	$(CC) $(FLAGS) -c -I $(INCL) -o libft.a $(OBJ_FILES) 
+all: $(NAME)
+
+$(NAME): $(OBJ_FILES)
+	ar -crs $(NAME) $(OBJ_FILES)	
 
 teste: $(OBJ_FILES)
 
 %.o : %.c
-	$(CC) $(FLAGS) -c $< -o $@
+	$(CC) $(FLAGS) -I $(INCL) -c $< -o $@
 
 clean:
 	rm $(SRC)/*.o
 
 fclean: clean
-	rm libft.a
+	rm $(NAME)
 
 re: fclean all
