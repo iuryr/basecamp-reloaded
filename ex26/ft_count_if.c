@@ -6,11 +6,11 @@
 /*   By: iusantos <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/26 14:31:15 by iusantos          #+#    #+#             */
-/*   Updated: 2023/04/26 19:00:56 by iusantos         ###   ########.fr       */
+/*   Updated: 2023/04/27 19:12:08 by iusantos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_count_if(char **tab, int(*f)(char*))
+int	ft_count_if(char **tab, int (*f)(char*))
 {
 	int	i;
 	int	counter;
