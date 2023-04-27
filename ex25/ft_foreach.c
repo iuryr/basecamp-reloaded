@@ -6,11 +6,11 @@
 /*   By: iusantos <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/26 13:10:25 by iusantos          #+#    #+#             */
-/*   Updated: 2023/04/26 13:22:57 by iusantos         ###   ########.fr       */
+/*   Updated: 2023/04/27 19:11:01 by iusantos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_foreach(int *tab, int length, void(*f)(int))
+void	ft_foreach(int *tab, int length, void (*f)(int))
 {
 	int	i;
 
