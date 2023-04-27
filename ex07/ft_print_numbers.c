@@ -6,7 +6,7 @@
 /*   By: iusantos <iusantos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/19 13:36:29 by iusantos          #+#    #+#             */
-/*   Updated: 2023/04/19 13:38:37 by iusantos         ###   ########.fr       */
+/*   Updated: 2023/04/27 18:18:28 by iusantos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,4 @@ void	ft_print_numbers(void)
 		ft_putchar(i);
 		i++;
 	}
-}
-
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
 }
