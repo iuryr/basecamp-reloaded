@@ -1,2 +1,2 @@
 #!/bin/sh
-ifconfig -a | grep -E -o '([[:xdigit:]]{2}:){5}[[:xdigit:]]{2}'
+ifconfig | grep -E -o '([[:xdigit:]]{2}:){5}[[:xdigit:]]{2}'
