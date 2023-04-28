@@ -6,7 +6,7 @@
 /*   By: iusantos <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/27 15:53:57 by iusantos          #+#    #+#             */
-/*   Updated: 2023/04/28 14:21:07 by iusantos         ###   ########.fr       */
+/*   Updated: 2023/04/28 14:54:11 by iusantos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 int	main(int argc, char *argv[])
 {
 	int		fd;
-	char	buf;
+	char	buf[1];
 
 	if (argc == 1)
 	{
