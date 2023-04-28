@@ -6,7 +6,7 @@
 /*   By: iusantos <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/27 15:53:57 by iusantos          #+#    #+#             */
-/*   Updated: 2023/04/28 12:40:16 by iusantos         ###   ########.fr       */
+/*   Updated: 2023/04/28 13:35:06 by iusantos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,8 @@ int	main(int argc, char *argv[])
 			return (1);
 		while (read(fd, &buf, 1))
 			write(1, &buf, 1);
-		close(fd);
+		if (close(fd) == -1)
+			return (1);
 		return (0);
 	}
 }
