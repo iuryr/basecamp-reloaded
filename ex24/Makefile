@@ -1,5 +1,5 @@
 NAME = libft.a
-CC = gcc
+CC = cc
 FLAGS = -Wall -Wextra -Werror
 SRC = ./srcs
 INCL = ./includes
@@ -13,15 +13,13 @@ all: $(NAME)
 $(NAME): $(OBJ_FILES)
 	ar -crs $(NAME) $(OBJ_FILES)	
 
-teste: $(OBJ_FILES)
-
 %.o : %.c
 	$(CC) $(FLAGS) -I $(INCL) -c $< -o $@
 
 clean:
-	rm $(SRC)/*.o
+	rm -f $(SRC)/*.o
 
 fclean: clean
-	rm $(NAME)
+	rm -f $(NAME)
 
 re: fclean all
