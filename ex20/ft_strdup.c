@@ -6,7 +6,7 @@
 /*   By: iusantos <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/27 18:42:26 by iusantos          #+#    #+#             */
-/*   Updated: 2023/04/28 10:27:10 by iusantos         ###   ########.fr       */
+/*   Updated: 2023/04/28 11:15:42 by iusantos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ char	*ft_strdup(char *src)
 		dest[i] = src[i];
 		i++;
 	}
-	dest[size] = '\0';
+	dest[i] = '\0';
 	return (dest);
 }
 
